@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+
+body 
+    font-family: $openSans 
+    font-size: 16px
+
+
+.container 
+    max-width: 1220px
+    padding: 0 10px
+    margin: 0 auto
+
+
+%links
+    ul
+        padding: 0
+        margin: 0
+        list-style: none
+        li 
+            display: inline-block
+        
+.row 
+    display: flex
+    flex-wrap: wrap  
+
+%col 
+    padding: 0 15px
+
+.col
+    +make-cols
+        @extend %col
+
+.col-sm
+    +sm
+        +make-cols
+            padding: 0 15px
+
+.col-ex-md
+    +ex-md
+        +make-cols
+            padding: 0 15px
+     
+.col-md
+    +md
+        +make-cols
+            padding: 0 15px
+                     

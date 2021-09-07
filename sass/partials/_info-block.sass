@@ -1,0 +1,94 @@
+.info-block
+    background: url(../images/info-block-bg.jpg) 50%/cover no-repeat
+    box-shadow: inset 0px -4px 6px #1f1f1f
+    padding-bottom: 58px
+    +md 
+        padding-bottom: 41px
+
+    &__col
+        padding-left: 28px
+        padding-top: 20px
+        +md 
+            padding-left: 124px 
+            padding-top: 7px
+    &__title
+        color: $yellow
+        font-size: 39px
+        font-weight: normal
+        text-align: center
+        margin-bottom: 56px
+        padding-top: 34px
+        text-transform: uppercase
+        position: relative
+        margin-top: 0
+        +md 
+            font-size: 43px
+            margin-bottom: 40px
+            padding-top: 40px
+    
+    &__subtitle
+        color: #c8c8c8
+        position: absolute
+        top: 25px
+        right: 34px
+        font-size: 20px
+        font-weight: bold
+        +md 
+            display: none
+    &__img-col
+        position: relative
+        
+        padding-bottom: 63px
+        +md 
+            padding-left: 27px
+    &__img
+        display: block
+        margin: 0 auto
+    &__img-info
+        position: absolute
+        top: -37px
+        left: 12px
+        font-size: 19px
+        text-transform: uppercase
+        font-family: $ptSans
+        color: #fff
+        background: $yellow
+        width: 117px
+        height: 117px
+        border-radius: 50%
+        line-height: 117px
+        text-align: center
+        +md 
+            top: -38px
+            left: -16px
+
+    &__list
+        padding: 0
+        margin: 0
+        list-style: none
+        +md 
+            padding-top: 46px
+    
+    &__item
+        margin-bottom: 22px
+    
+    &__link
+        text-decoration: none 
+        font-size: 22px
+        color: #a9a9a7
+        padding-left: 36px
+        position: relative
+        +md 
+            display: block
+    
+    &__link::before
+        content: ""
+        position: absolute
+        top: 9px
+        left: 3px
+        background: $yellow
+        width: 15px
+        height: 15px
+        border-radius: 50%
+
+        

@@ -1,0 +1,134 @@
+.header
+    padding-top: 20px
+    background: url(../images/main-bg.jpg) 50%/cover no-repeat
+    +md 
+        padding-bottom: 197px
+        &__inner
+            justify-content: space-between
+            
+    .logo
+        background: linear-gradient(to bottom, #5d5d5d 0%, #464646 100%)
+        padding: 22px 16px 8px 13px
+        &__text
+            font-size: 13px
+            font-family: $notoSans
+            text-transform: uppercase
+            color: #fff
+            display: none
+            +md 
+                display: inline-block
+                margin-top: auto
+                padding-bottom: 19px
+                padding-left: 10px
+        +md 
+            background: none
+    &__logo
+        +md 
+            display: flex
+            flex-wrap: wrap
+    &__logo-img 
+        +md
+            display: block
+            width: 322px
+            height: 85px
+    &__nav
+        padding: 14px 12px 17px 0
+        background: url(../images/nav-bg.jpg) 0 0 repeat
+        +md 
+            height: 40px
+            margin-top: 44px
+            padding: 11px 12px 30px 16px
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+   
+    &__item
+        display: inline-block
+        margin-top: 15px
+        +sm
+            margin-top: 0
+        +md 
+            margin-left: -6px
+            margin-right: 10px
+
+    &__link
+        display: block
+        text-decoration: none
+        font-family: $notoSans
+        color: $colorNav
+        padding-left: 57px
+        text-transform: uppercase 
+        font-size: 19px
+        position: relative 
+        +md 
+            font-size: 17px       
+
+    .ic-about::before
+        content: ""
+        display: inline-block
+        background: url(../images/ic-nav.png) 0 0 no-repeat
+        position: absolute
+        top: 0%
+        left: 17%
+        width: 24px
+        height: 22px
+        +md
+            background: url(../images/ic-about.png) 0 0 no-repeat 
+
+    .ic-services::before
+        content: ""
+        display: inline-block
+        background: url(../images/ic-nav.png) -32px 0 no-repeat
+        position: absolute
+        top: 0%
+        left: 21%
+        width: 22px
+        height: 22px
+        +md
+            background: url(../images/ic-sercvice.png) 0 0 no-repeat 
+            
+
+    .ic-contact::before
+        content: ""
+        display: inline-block
+        background: url(../images/ic-nav.png) -66px 0 no-repeat
+        position: absolute
+        top: 0%
+        left: 15%
+        width: 28px
+        height: 21px
+        +md
+            background: url(../images/ic-contact.png) 0 0 no-repeat 
+
+    &__bottom
+        +md
+            padding-top: 63px
+    
+    &__main-pic
+        padding-left: 0
+        padding-right: 40px
+
+    &__video
+        display: block
+        +md 
+            widows: 550px
+            height: 280px
+
+    &__title
+        margin-top: 53px
+        font-family: $notoSans
+        text-transform: uppercase
+        font-size: 63px
+        font-weight: normal
+        color: $yellow
+        text-align: center 
+        display: none
+        +md 
+         display: block
+    &__subtitle
+        color: #fff
+        display: block
+
+    

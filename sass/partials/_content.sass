@@ -1,0 +1,67 @@
+.content
+    color: #fff
+    padding-bottom: 14px
+    +md 
+        background: $yellow
+        padding-bottom: 135px
+    
+    &__title
+        display: none
+        margin-top: 0
+        padding-top: 62px
+        font-size: 37px
+        color:#fff 
+        text-transform: uppercase 
+        text-align: center
+        margin-bottom: 29px
+        +md 
+            display: block
+    &__col
+        position: relative
+        padding: 0 0
+        overflow: hidden
+    &__col_3
+        display: none 
+        +md 
+            position: relative
+            display: block
+            padding: 0 0 
+            overflow: hidden
+    &__link-img
+        display: block
+
+    &__txt
+        background: #ec9e03
+        width: 300px
+        height: 180px
+        font-size: 13px
+        color: #fff
+        padding: 15px 10px 10px 29px
+        transform: translateY(400px)
+        transition: transform 2s
+        position: absolute
+        top: -11px
+        left: 10px
+        line-height: 38px
+        +md
+            font-size: 24px
+            width: 386px
+            height: 232px   
+    &__col:hover .content__txt,
+    &__col_3:hover .content__txt
+        transform: translateY(0)
+
+    &__img
+        display: block
+        margin-left: 10px
+        margin-top: 13px
+        width: 300px
+        height: 180px
+        +md 
+            width: 386px
+            height: 232px
+            
+        
+    
+    
+        

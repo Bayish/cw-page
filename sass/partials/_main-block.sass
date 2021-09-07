@@ -1,0 +1,96 @@
+.main-block
+    background: url(../images/content-bg.jpg) 50% 0/cover no-repeat
+    text-align: center
+    +md 
+        margin-top: -104px
+       
+    &__col
+        margin-bottom: -2px
+        margin-top: 100px
+        padding: 115px 0 26px
+        +md 
+            height: 100%
+            border-right: 1px solid #d2d2d2
+            border-bottom: 1px solid #d2d2d2
+            padding-bottom: 35px
+            padding-top: 146px
+            box-shadow: 0 1px 0 2px #cacaca
+        +sm 
+            margin-top: 0
+    
+    &__col::last-child
+        +md
+            border-right: transparent
+              
+    &__col_1 .main-block__link
+        +md
+            -left: 119px
+            padding-right: 12px
+
+    &__col_2 .main-block__link
+        +md
+            padding-left: 29px
+            padding-right: 12px
+
+    &__col_3 .main-block__link
+        +md
+            padding-left: 21px
+            padding-right: 94px
+    
+    &__link
+        display: block
+        font-size: 23px
+        color: #000
+        text-decoration: none
+        text-transform: uppercase
+        position: relative
+        letter-spacing: -0.9px
+        +md 
+            font-size: 27px
+            padding:0
+            text-align: center
+        
+    &__link::after
+        content: ""
+        position: absolute
+
+    .ic-down::after
+        background: url(../images/ic-download.png) 0 0 no-repeat
+        top: -79px
+        left: 59px
+        width: 89px
+        height: 61px
+        +md 
+            background-size: 110px
+            width: 109px
+            height: 74px
+            top: -87px
+            left: 196px
+    
+    .ic-custom::after
+        background: url(../images/ic-custom.png) 0 0 no-repeat
+        top: -68px
+        left: 88px
+        width: 67px
+        height: 69px
+        +md 
+            background-size: 91px
+            width: 92px
+            height: 95px
+            top: -107px
+            left: 174px
+    
+    
+    .ic-mail::after
+        background: url(../images/ic-mail.png) 0 0 no-repeat
+        top: -85px
+        left: 44px
+        width: 68px
+        height: 69px
+        +md 
+            top: -93px
+            left: 133px
+            background-size: 82px
+            width: 81px
+            height: 83px
+    
